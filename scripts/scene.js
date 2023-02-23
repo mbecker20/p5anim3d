@@ -66,8 +66,8 @@ function makeScene(xPix,yPix) {
     },245);
 
     //viewer
-    let viewPoint=[-10,-8,4];
-    let viewDir=VF.unit([2,1,0]);
+    let viewPoint=[-10,-8,20];
+    let viewDir=VF.unit([4,1,0]);
     let fovTheta=Math.PI/5;
     let moveDist=.2;
     let rotRad=.04;
@@ -76,7 +76,7 @@ function makeScene(xPix,yPix) {
     let viewer=new Viewer(viewPoint,viewDir,fovTheta,xPix,yPix,moveDist,rotRad,deltaTheta,mouseRotScale);
 
     //anim
-    let dynObjs=[block0,block1,isoc0,isoc1];
+    let dynObjs=[block0,block1,isoc1];
     let statObjs=[floor0,wall0,wall1,plane0,plane1,plane2,boundingBox];
     //let dynObjs=[isoc0,isoc1,isoc2];
     //let statObjs=[boundingBox,centerFloor0,sheet0,plane0,plane1,plane2];

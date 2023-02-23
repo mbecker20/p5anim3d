@@ -1,6 +1,6 @@
 function setup() {
   //block
-  window.anim=makeScene(window.clientWidth,window.clientHeight) //returns anim3d object
+  window.anim=makeScene(window.windowWidth,window.windowHeight) //returns anim3d object
 
   window.dt=.02;
   window.stepsPerFrame=1;
